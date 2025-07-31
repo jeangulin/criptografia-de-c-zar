@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança Digital - Criptografia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Segurança Digital & Criptografia</h1>
+            <p>Entenda como a matemática mantém nossos dados seguros online.</p>
+        </header>
+
+        <main>
+            <section class="info">
+                <h2>O que é Criptografia?</h2>
+                <p>
+                    A criptografia é a ciência de transformar dados legíveis em dados criptografados, utilizando métodos matemáticos. Ela garante que informações sensíveis sejam protegidas durante sua transmissão ou armazenamento, garantindo sua privacidade.
+                </p>
+                <p>
+                    Algoritmos de criptografia, como a Cifra de César, são fundamentais para a segurança digital, especialmente em comunicações online, como e-mails, transações bancárias e mensagens.
+                </p>
+            </section>
+
+            <section class="crypto-section">
+                <h2>Exemplo Prático: Cifra de César</h2>
+                <p>Digite um texto (até 30 caracteres) e escolha uma chave para criptografar sua mensagem.</p>
+
+                <div class="input-container">
+                    <label for="input-text">Texto (A-Z):</label>
+                    <input type="text" id="input-text" placeholder="Digite até 30 letras" maxlength="30">
+
+                    <label for="key">Chave de Deslocamento:</label>
+                    <input type="number" id="key" value="3" min="1" max="25">
+                </div>
+
+                <button onclick="criptografar()">Criptografar</button>
+
+                <div class="result">
+                    <h3>Texto Cifrado:</h3>
+                    <p id="encrypted-text">-</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Criptografia e Segurança Digital</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
